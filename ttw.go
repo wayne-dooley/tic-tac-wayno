@@ -16,7 +16,9 @@ func showBoard(sb [10]string) {
 	fmt.Println("  -----------")
 	fmt.Println("  ", sb[4], "|", sb[5], "|", sb[6])
 	fmt.Println("  -----------")
-	fmt.Println("  ", sb[7], "|", sb[8], "|", sb[9], "\n")
+	fmt.Println("  ", sb[7], "|", sb[8], "|", sb[9])
+	fmt.Println(" ")
+
 }
 
 // Display into
@@ -24,11 +26,12 @@ func main() {
 
 	// Intro screen
 	//
-	fmt.Println("\n*********************************")
-	fmt.Println("**                             **")
+	fmt.Println("\n***********************************")
+	fmt.Println("**                               **")
 	fmt.Println("**  Welcome to tic-tac-wayno!!!  **")
-	fmt.Println("**                             **")
-	fmt.Println("*********************************\n")
+	fmt.Println("**                               **")
+	fmt.Println("***********************************")
+	fmt.Println(" ")
 
 	/* Declare the board
 	*
@@ -116,7 +119,8 @@ func main() {
 			fmt.Println("**           **")
 			fmt.Println("**  X WINS!  **")
 			fmt.Println("**           **")
-			fmt.Println("***************\n")
+			fmt.Println("***************")
+			fmt.Println(" ")
 			break
 		}
 
@@ -135,7 +139,8 @@ func main() {
 			fmt.Println("**            **")
 			fmt.Println("**  Tie Game  **")
 			fmt.Println("**            **")
-			fmt.Println("****************\n")
+			fmt.Println("****************")
+			fmt.Println(" ")
 			break
 		}
 
@@ -270,7 +275,8 @@ func main() {
 			fmt.Println("**           **")
 			fmt.Println("**  O WINS!  **")
 			fmt.Println("**           **")
-			fmt.Println("***************\n")
+			fmt.Println("***************")
+			fmt.Println(" ")
 			break
 		}
 
