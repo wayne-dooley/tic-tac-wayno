@@ -173,6 +173,22 @@ func main() {
 			}
 		}
 
+		// Does O need a corner block?
+		if oTurn {
+			if (board[1] == "X" && board[9] == "X" && board[5] == "O") ||
+				(board[3] == "X" && board[7] == "X" && board[5] == "O") {
+				for i := 0; i <= 3; i++ {
+					if board[side[i]] == " " {
+						board[side[i]] = "O"
+						oTurn = false
+						break
+					}
+				}
+
+			}
+
+		}
+
 		// Does O need a simple block?
 		if oTurn {
 			for i := 0; i < 8; i++ {
@@ -194,27 +210,11 @@ func main() {
 			}
 		}
 
-		// Does O need a corner block?
-		if oTurn {
-			if (board[1] == "X" && board[9] == "X" && board[5] == "O") ||
-				(board[3] == "X" && board[7] == "X" && board[5] == "O") {
-				for i := 0; i < 3; i++ {
-					if board[side[i]] == " " {
-						board[side[i]] = "O"
-						oTurn = false
-						break
-					}
-				}
-
-			}
-
-		}
-
 		// Can O set up for a win?
 		if oTurn {
 			for i := 0; i < 8; i++ {
 				if board[b[i][0]] == "O" && board[b[i][1]] == " " && board[b[i][2]] == " " {
-					board[b[i][1]] = "O"
+					board[b[i][2]] = "O"
 					oTurn = false
 					break
 				}
@@ -223,7 +223,7 @@ func main() {
 					oTurn = false
 					break
 				}
-				if board[b[i][0]] == " " && board[b[i][1]] == " " && board[b[i][2]] == "0" {
+				if board[b[i][0]] == " " && board[b[i][1]] == " " && board[b[i][2]] == "O" {
 					board[b[i][1]] = "O"
 					oTurn = false
 					break
