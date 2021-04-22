@@ -26,11 +26,11 @@ func main() {
 
 	// Intro screen
 	//
-	fmt.Println("\n***********************************")
-	fmt.Println("**                               **")
-	fmt.Println("**  Welcome to tic-tac-wayno!!!  **")
-	fmt.Println("**                               **")
-	fmt.Println("***********************************")
+	fmt.Println("\n*********************************")
+	fmt.Println("**                             **")
+	fmt.Println("**  Welcome to tic-tac-wayno!  **")
+	fmt.Println("**                             **")
+	fmt.Println("*********************************")
 	fmt.Println(" ")
 
 	/* Declare the board
