@@ -47,6 +47,6 @@ func main() {
 	// Start the web server, set the port to listen to 8080
 	// Without a path, it assumes localhost
 	// Print any errors from starting the webserver using fmt
-	fmt.Println("Serving on port 8080..")
+	fmt.Println("Serving on port 8080...")
 	fmt.Println(http.ListenAndServe(":8080", nil))
 }
